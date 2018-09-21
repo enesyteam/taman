@@ -1,8 +1,8 @@
 export default {
     en: {
-        billingDetails: 'Billing Information',
-        createdAt: 'Created at',
-        customer: 'Customer',
+        billingDetails: 'Thông tin hóa đơn',
+        createdAt: 'Tạo lúc',
+        customer: 'Khách hàng',
         id: 'ID',
         nameHeading: 'Name',
         paymentMethod: 'Payment Method',

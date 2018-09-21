@@ -4,11 +4,11 @@ export default {
         sortAlphabeticallyReverse: 'Alphabetically: Z-A',
         sortBestSelling: 'Best Selling',
         sortFeatured: 'Featured',
-        sortLabel: 'Sort by',
-        sortOldest: 'Date: Old to New',
-        sortPrice: 'Price: Low to High',
-        sortPriceReverse: 'Price: High to Low',
-        sortRecent: 'Date: New to Old'
+        sortLabel: 'Sắp xếp theo',
+        sortOldest: 'Thời gian: Cũ nhất',
+        sortPrice: 'Giá: Thấp đến cao',
+        sortPriceReverse: 'Giá: Cao đến thấp',
+        sortRecent: 'Thời gian: Mới nhất'
     },
     pt: {
         sortAlphabetically: 'Alfabeticamente: A-Z',

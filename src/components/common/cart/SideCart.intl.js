@@ -1,10 +1,10 @@
 export default {
     en: {
-        checkout: 'Checkout',
-        continueShopping: 'Continue shopping',
-        emptyCart: 'Your cart is empty',
-        header: 'Your shopping cart',
-        subtotal: 'Subtotal'
+        checkout: 'Thanh toán',
+        continueShopping: 'Tiếp tục mua hàng',
+        emptyCart: 'Giỏ hàng đang trống',
+        header: 'Giỏ hàng của bạn',
+        subtotal: 'Tổng cộng'
     },
     pt: {
         checkout: 'Finalizar',
