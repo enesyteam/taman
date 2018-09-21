@@ -4,8 +4,8 @@ export default {
     app: {
         title: 'Phong thủy Tại Tâm',
         locale: {
-            available: ['en', 'pt'],
-            default: 'pt'
+            available: ['en', 'pt', 'vn'],
+            default: 'en'
         }
     },
     api: {

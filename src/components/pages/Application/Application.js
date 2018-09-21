@@ -144,12 +144,12 @@ class Application extends React.Component {
                     <div className="application__overlay-content"></div>
                 </div>
                 <div className={contentClass}>
-                    {isAdmin ?
+                    { /* isAdmin ?
                         <div className="application__admin-warning">
                             <Heading>*** ADMIN ACCOUNT ***</Heading>
                         </div>
                         :
-                        null
+                        null */
                     }
                     <Header collections={collections} collectionsTree={this.state.collectionsTree} />
                     <div className="application__container-wrapper">

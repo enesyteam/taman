@@ -23,6 +23,12 @@ class BaseHtml extends React.Component {
                     <link rel="apple-touch-icon" href={`${this.props.staticURL}/apple_touch_icon.png`} />
                     <link rel="stylesheet" href={`${this.props.staticURL}/vendor/font-awesome-4.6.3/css/font-awesome.min.css`} />
                     {this.props.css.map((href, idx) => <link key={idx} rel="stylesheet" type="text/css" href={href} />)}
+                    <link
+                        rel="stylesheet"
+                        /* eslint-disable max-len */
+                        href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=vietnamese"
+                        /* eslint-disable max-len */
+                    />
                 </head>
                 <body>
                     <div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}}></div>

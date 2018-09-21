@@ -32,14 +32,14 @@
     max-height: 200px;
 
     @include breakpoint(medium-screens) {
-        border-radius: 50%;
+        // border-radius: 50%;
         &:hover {
             background-color: $color-secondary;
         }
     }
 
     @include breakpoint(wide-screens) {
-        border-radius: 50%;
+        // border-radius: 50%;
         &:hover {
             background-color: $color-secondary;
         }
