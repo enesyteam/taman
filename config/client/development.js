@@ -10,7 +10,7 @@ export default {
     },
     api: {
         atlas: {
-            baseUrl: 'http://api.phongthuytaitam.net/v1'
+            baseUrl: 'https://api.phongthuytaitam.net/v1'
         }
     },
     googleAnalytics: {
