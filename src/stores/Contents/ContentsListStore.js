@@ -68,23 +68,23 @@ class ContentsListStore extends BaseStore {
         }
     }
 
-    getContentsByCollections( collections ) {
-        if ( !collections || collections.length == 0 ) {
-            return null;
-        }
+    // getContentsByCollections( collections ) {
+    //     if ( !collections || collections.length == 0 ) {
+    //         return null;
+    //     }
 
-        let result = [];
+    //     let result = [];
 
-        this.contents.map( content => {
-            if ( content.collections.length && content.collections.some( r => collections.includes( r ) ) ) {
-               result.push( content );     
-            }
-        } )
+    //     this.contents.map( content => {
+    //         if ( content.collections.length && content.collections.some( r => collections.includes( r ) ) ) {
+    //            result.push( content );     
+    //         }
+    //     } )
 
-        return result;
+    //     return result;
 
-        // let found = collections.some( r => arr2.includes( r ) )
-    }
+    //     // let found = collections.some( r => arr2.includes( r ) )
+    // }
 
     /**
      * Returns the contents that contain all of the given tags

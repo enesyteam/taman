@@ -1,6 +1,8 @@
 /**
  * Imports
  */
+import { map } from 'lodash';
+
 import BaseStore from 'fluxible/addons/BaseStore';
 import productActions from '../../constants/products';
 
@@ -58,6 +60,30 @@ class ProductContentsStore extends BaseStore {
         } else {
             return [];
         }
+    }
+
+    getContentsByCollections( collections ) {
+
+        if ( !collections || collections.length == 0 ) {
+            return null;
+        }
+
+        if ( !this.contents || this.contents.length == 0 ) return null;
+
+        let result = [];
+
+        map( this.contents,  content => {
+            console.log(content[0])
+            if ( content[0].collections && content[0].collections.length 
+                && content[0].collections.some( r => collections.includes( r ) ) ) {
+               result.push( content[0] );  
+               // alert(content)   
+            }
+        } )
+
+        return result;
+
+        // let found = collections.some( r => arr2.includes( r ) )
     }
 
     //

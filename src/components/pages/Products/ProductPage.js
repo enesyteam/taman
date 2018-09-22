@@ -96,7 +96,7 @@ class ProductPage extends React.Component {
         cartLoading: this.context.getStore(CartStore).isLoading(),
         cartProducts: this.context.getStore(CartStore).getProducts(),
         product: this.context.getStore(ProductDetailsStore).getProduct(),
-        contents: this.context.getStore(ProductContentsStore).getContents(),
+        contents: this.context.getStore(ProductContentsStore).getContentsByCollections( this.context.getStore(ProductDetailsStore).getProduct().collections ),
         addingToCart: false,
         suggestions: this.context.getStore(ProductSuggestionsStore).getProducts(),
         suggestionsLoading: this.context.getStore(ProductSuggestionsStore).isLoading(),
