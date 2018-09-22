@@ -377,7 +377,7 @@ ProductPage = connectToStores(ProductPage, [CartStore, ProductContentsStore, Pro
         _cartLoading: context.getStore(CartStore).isLoading(),
         _cartProducts: context.getStore(CartStore).getProducts(),
         _product: context.getStore(ProductDetailsStore).getProduct(),
-        _contents: context.getStore(ProductContentsStore).getContents(),
+        _contents: context.getStore(ProductContentsStore).getContentsByCollections( context.getStore(ProductDetailsStore).getProduct().collections ),
         _suggestions: context.getStore(ProductSuggestionsStore).getProducts(),
         _suggestionsLoading: context.getStore(ProductSuggestionsStore).isLoading()
     };

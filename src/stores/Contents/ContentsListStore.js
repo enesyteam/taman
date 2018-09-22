@@ -1,6 +1,8 @@
 /**
  * Imports
  */
+import { some } from 'lodash';
+
 import BaseStore from 'fluxible/addons/BaseStore';
 import contentActions from '../../constants/contents';
 
@@ -64,6 +66,24 @@ class ContentsListStore extends BaseStore {
         } else {
             return [];
         }
+    }
+
+    getContentsByCollections( collections ) {
+        if ( !collections || collections.length == 0 ) {
+            return null;
+        }
+
+        let result = [];
+
+        this.contents.map( content => {
+            if ( content.collections.length && content.collections.some( r => collections.includes( r ) ) ) {
+               result.push( content );     
+            }
+        } )
+
+        return result;
+
+        // let found = collections.some( r => arr2.includes( r ) )
     }
 
     /**
