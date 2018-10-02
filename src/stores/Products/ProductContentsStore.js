@@ -63,7 +63,7 @@ class ProductContentsStore extends BaseStore {
     }
 
     getContentsByCollections( collections ) {
-        console.log( collections );
+        // console.log( collections );
 
         if ( !collections || collections.length == 0 ) {
             return null;
@@ -75,7 +75,7 @@ class ProductContentsStore extends BaseStore {
 
         map( this.contents,  content => {
             console.log(content[0])
-            if ( content[0].collections && content[0].collections.length 
+            if ( content[0] && content[0].collections && content[0].collections.length 
                 && content[0].collections.some( r => collections.includes( r ) ) ) {
                result.push( content[0] );  
                // alert(content)   
