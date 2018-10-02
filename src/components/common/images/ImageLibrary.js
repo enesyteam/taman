@@ -52,6 +52,9 @@ class ImageLibrary extends React.Component {
         return (
             <div className="image-library">
                 {this.props.images.map((img, idx) => {
+                    if ( !img ) {
+                        return null;
+                    }
                     return (
                         <div key={idx} className="image-library__placeholder">
                             <img src={`//${img.url}`} />
