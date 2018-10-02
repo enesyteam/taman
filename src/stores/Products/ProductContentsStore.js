@@ -63,6 +63,7 @@ class ProductContentsStore extends BaseStore {
     }
 
     getContentsByCollections( collections ) {
+        console.log( collections );
 
         if ( !collections || collections.length == 0 ) {
             return null;

@@ -67,14 +67,16 @@ class ProductListItem extends React.Component {
             <div className="product-list-item" itemScope itemType="http://schema.org/Product">
                 <Link to="product-slug" params={linkParams}>
                     <div className="product-list-item__image">
-                        {this.props.product.images && this.props.product.images.length > 0 ?
+                        {this.props.product.images && this.props.product.images.length > 0
+                        && this.props.product.images[0] ?
                             <span style={{display: 'none'}} itemProp="image">
                                 {`//${this.props.product.images[0].url}`}
                             </span>
                             :
                             null
                         }
-                        {this.props.product.images && this.props.product.images.length > 0 ?
+                        {this.props.product.images && this.props.product.images.length > 0
+                        && this.props.product.images[0] ?
                             <img src={`//${this.props.product.images[0].url}`} />
                             :
                             <img src={this.state.productPlaceholderImage} />
