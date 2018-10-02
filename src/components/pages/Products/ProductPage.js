@@ -254,7 +254,8 @@ class ProductPage extends React.Component {
 
                         <div className="product-page__product" itemScope itemType="http://schema.org/Product">
                             <div className="product-page__gallery-container">
-                                {this.state.product.images && this.state.product.images.length > 0 ?
+                                {this.state.product.images && this.state.product.images.length > 0
+                                && this.state.product.images[0] ?
                                     <div className="product-page__gallery">
                                         <span style={{display: 'none'}} itemProp="image">
                                             {`//${this.state.product.images[0].url}`}
